@@ -58,7 +58,7 @@ export default class Greeting extends LightningElement {
         this.isAnimating = false;
         this.index = (this.index + 1) % greetings.length;
 
-        setTimeout(() => this.updateGreeting(), 500);
+        // setTimeout(() => this.updateGreeting(), 500);
     }
 
     // Update to the next greeting and start animating
