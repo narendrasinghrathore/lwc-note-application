@@ -1,0 +1,30 @@
+.show,
+.hide {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: hsla(0, 14%, 95%, 0.88);
+    justify-content: center;
+    align-items: center;
+}
+.show {
+    display: flex;
+}
+.hide {
+    display: none;
+}
+article {
+    box-shadow: 0 0 5px 1px #656565;
+    border-radius: 3px;
+    width: 80vw;
+    height: 60vh;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: white;
+}
+.close {
+    cursor: pointer;
+    float: right;
+}

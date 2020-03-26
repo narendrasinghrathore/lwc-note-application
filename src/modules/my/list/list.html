@@ -1,0 +1,13 @@
+<template>
+    <article>
+        <h2>List({list.length})</h2>
+        <template
+            for:each={list}
+            for:item="item"
+            for:first="first"
+            for:last="last"
+        >
+            <my-item key={item.id} item={item}></my-item>
+        </template>
+    </article>
+</template>
