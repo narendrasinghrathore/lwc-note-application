@@ -51,6 +51,7 @@
         "test:unit:debug": "lwc-services test:unit --debug",
         "test:unit:watch": "lwc-services test:unit --watch",
         "watch": "lwc-services watch",
-        "watch:json": "json-server --watch db.json"
+        "watch:json": "json-server --watch db.json",
+        "deploy": "firebase deploy"
     }
 }

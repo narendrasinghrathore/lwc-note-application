@@ -9,7 +9,7 @@ logs
 
 # Standard dist folder
 /dist
-
+/public
 # Tooling files
 node_modules
 
