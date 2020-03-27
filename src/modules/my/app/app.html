@@ -1,12 +1,15 @@
 <template>
     <section>
-        <button onclick={openDialog}>Add Note</button>
         <my-add
             add={addNewNote}
             item={selectedItem}
             display={dialog}
             onclose={closeDialog}
         ></my-add>
-        <my-notes onopenitem={handleItem} list={list}></my-notes>
+        <my-notes onopenitem={handleItem} list={list}>
+            <button slot="add-button" onclick={openDialog}>
+                Add Note &#43;
+            </button>
+        </my-notes>
     </section>
 </template>

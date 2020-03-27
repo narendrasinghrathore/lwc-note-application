@@ -1,4 +1,6 @@
 ul {
     margin: 0em;
     padding: 0em;
+    height: 88vh;
+    overflow: auto;
 }

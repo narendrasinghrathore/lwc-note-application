@@ -10,7 +10,7 @@ const http = {
         url = `${host}${url}`;
         const res = await fetch(url, {
             method: 'post',
-            body: JSON.stringify(body),
+            body: JSON.stringify({ ...body, date: new Date().getTime() }),
             headers: {
                 Accept: 'application/json',
                 'Content-Type': 'application/json'

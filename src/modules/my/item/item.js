@@ -3,6 +3,10 @@ export default class Item extends LightningElement {
     @api item = {};
     delegatesFocus = true;
 
+    get timestamp() {
+        return new Date(this.item.date).toDateString();
+    }
+
     openSelectedItem(e) {
         if (e.type === 'keypress' && e.keyCode !== 13) {
             return;

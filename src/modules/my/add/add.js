@@ -5,6 +5,18 @@ export default class Add extends LightningElement {
         content: 'Default content'
     };
 
+    connectedCallback() {
+        document.addEventListener(
+            'keydown',
+            (event) => {
+                if (event.key === 'Escape') this.close('close', {});
+            },
+            {
+                capture: true
+            }
+        );
+    }
+
     dialogStatus = 'hide';
 
     /**

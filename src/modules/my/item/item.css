@@ -4,7 +4,8 @@ li {
     padding: 10px;
     list-style-type: none;
     margin: 1px auto;
-
+    display: flex;
+    justify-content: space-between;
     border-radius: 3px;
     transition: box-shadow ease 0.3s;
 }
