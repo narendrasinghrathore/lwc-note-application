@@ -1,5 +1,12 @@
 <template>
-    <my-notes list={list}></my-notes>
-    <button onclick={openDialog}>Add Note</button>
-    <my-add display={dialog} onclose={closeDialog}></my-add>
+    <section>
+        <button onclick={openDialog}>Add Note</button>
+        <my-add
+            add={addNewNote}
+            item={selectedItem}
+            display={dialog}
+            onclose={closeDialog}
+        ></my-add>
+        <my-notes onopenitem={handleItem} list={list}></my-notes>
+    </section>
 </template>

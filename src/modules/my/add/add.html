@@ -3,10 +3,44 @@
         <article>
             <h3>
                 Add
-                <span class="close" title="Close dialog" onclick={closeDialog}
+                <span
+                    tabindex="0"
+                    class="close"
+                    title="Close dialog"
+                    role="button"
+                    onkeypress={closeDialog}
+                    onclick={closeDialog}
                     >&#9932;</span
                 >
             </h3>
+            <div>
+                <input
+                    name="title"
+                    value={item.title}
+                    oninput={handleChange}
+                    type="text"
+                    title="Title"
+                    placeholder="Note title"
+                    aria-placeholder="Note title"
+                />
+            </div>
+            <div>
+                <textarea
+                    name="content"
+                    value={item.content}
+                    oninput={handleChange}
+                    type="text"
+                    title="Content"
+                    height="400"
+                    placeholder="Start writing something here..."
+                    aria-placeholder="Start writing something here..."
+                ></textarea>
+            </div>
+            <div>
+                <button onclick={handleButtonClick}>
+                    {buttonText}
+                </button>
+            </div>
         </article>
     </section>
 </template>

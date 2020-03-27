@@ -1,5 +1,67 @@
 {
-    "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
-    "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
-    "profile": { "name": "typicode" }
+    "posts": [
+        {
+            "id": 1,
+            "title": "Vue.js",
+            "content": "",
+            "author": "Evan You"
+        },
+        {
+            "id": 2,
+            "title": "Redux",
+            "content": "",
+            "author": "dan_abramov"
+        },
+        {
+            "id": 3,
+            "title": "React.js",
+            "content": "",
+            "author": "facebook"
+        },
+        {
+            "id": 4,
+            "title": "Note application",
+            "author": "narendra"
+        },
+        {
+            "title": "Some note",
+            "content": "Testing with note application",
+            "id": 5
+        },
+        {
+            "title": "Test Note 2",
+            "content": "Add new note to list automatically on successful post request.",
+            "id": 6
+        },
+        {
+            "title": "Uttrakhand",
+            "content": "Arvind from uttrakhand in call.",
+            "id": 7
+        },
+        {
+            "title": "DFGDFG",
+            "content": "CVBVCV",
+            "id": 8
+        },
+        {
+            "title": "Itay",
+            "content": "GERMANY condition is worst.",
+            "id": 9
+        },
+        {
+            "title": "New note",
+            "content": "Date 27 March 2020",
+            "id": 10
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "body": "some comment",
+            "postId": 1
+        }
+    ],
+    "profile": {
+        "name": "typicode"
+    }
 }
