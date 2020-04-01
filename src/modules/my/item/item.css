@@ -3,7 +3,7 @@ li {
     border-bottom: 1px solid #dedede;
     padding: 10px;
     list-style-type: none;
-    margin: 1px auto;
+    margin: 1px 5px;
     display: flex;
     justify-content: space-between;
     border-radius: 3px;
