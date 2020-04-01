@@ -3,6 +3,16 @@ export default class Item extends LightningElement {
     @api item = {};
     delegatesFocus = true;
 
+    /**
+     * Last item in row
+     */
+    @api
+    last;
+
+    get isLastRow() {
+        return this.last ? 'last' : '';
+    }
+
     get timestamp() {
         return new Date(this.item.date).toDateString();
     }

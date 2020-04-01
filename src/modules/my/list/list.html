@@ -1,13 +1,12 @@
 <template>
     <article>
-        <ul role="list" tabindex="-1">
-            <template
-                for:each={list}
-                for:item="item"
-                for:first="first"
-                for:last="last"
-            >
-                <my-item key={item.id} item={item}></my-item>
+        <ul tabindex="-1">
+            <template iterator:item={list}>
+                <my-item
+                    key={item.value.id}
+                    last={item.last}
+                    item={item.value}
+                ></my-item>
             </template>
         </ul>
     </article>

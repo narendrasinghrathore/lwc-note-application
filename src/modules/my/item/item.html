@@ -1,9 +1,9 @@
 <template>
     <li
         onclick={openSelectedItem}
-        role="listitem"
-        onkeypress={openSelectedItem}
         tabindex="0"
+        class={isLastRow}
+        onkeypress={openSelectedItem}
     >
         <span>
             {item.title}
